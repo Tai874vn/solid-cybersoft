@@ -26,6 +26,42 @@
     <!-- Navigation -->
     <nav class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="https://solid.nextjstemplates.com/images/logo/logo-light.svg" alt="Solid Logo" class="h-8">
+            </div>
+    
+            <!-- Main Navigation Links -->
+            <div class="flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-primary transition">Home</a>
+                <a href="#" class="text-gray-600 hover:text-primary transition">Features</a>
+                <a href="#" class="text-gray-600 hover:text-primary transition">Blog</a>
+                <a href="#" class="text-gray-600 hover:text-primary transition">Docs</a>
+                <a href="#" class="text-gray-600 hover:text-primary transition">Pages</a>
+                <a href="#" class="text-gray-600 hover:text-primary transition">Support</a>
+            </div>
+    
+           
+            <div class="flex items-center space-x-4">
+                <!-- Search Bar -->
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        placeholder="Search..." 
+                        class="pl-4 pr-10 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    >
+                    <svg class="absolute right-3 top-2.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+    
+                
+                <div class="flex space-x-2">
+                    <a href="#" class="px-4 py-2 text-gray-600 hover:text-primary transition">Sign In</a>
+                    <a href="#" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 transition">Sign Up</a>
+                </div>
+
             <div class="text-2xl font-bold text-primary"><img src="https://solid.nextjstemplates.com/images/logo/logo-light.svg"></div>
             <div class="hidden md:flex space-x-8">
                 <a href="#" class="hover:text-primary">Home</a>
@@ -34,16 +70,32 @@
                 <a href="#" class="hover:text-primary">Docs</a>
                 <a href="#" class="hover:text-primary">Pages</a>
                 <a href="#" class="hover:text-primary">Support</a>
+
             </div>
-            <button class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
+
+    <section class="container mx-auto px-6 py-16 md:py-24">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Text Content (Left) -->
+            <div class="md:w-1/2">
+                <h2 class="text-lg font-semibold text-primary mb-4">🔥Solid - A Complete SaaS Starter Template for SaaS</h2>
+                <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6">Robust SaaS Boilerplate and Starter for Next.js</h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Packed with all the key integrations you need for swift SaaS startup launch, including - Authentication, Database, Sanity Blog, Essential UI Components, Business Pages and More. Built with - Next.js, React 18 and TypeScript.
+                </p>
+                <button class="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 rounded-lg transition duration-300">
+                    Get Started
+                </button>
+            </div>
+    
+            <!-- Image (Right) -->
+            <div class="md:w-1/2">
+                <img src="https://solid.nextjstemplates.com/images/hero/hero-light.svg" alt="Solid Template Preview" class="w-full h-auto">
+            </div>
+
     <section class="container mx-auto px-6 py-16 md:py-24 text-center">
         <h2 class="text-lg font-semibold text-primary mb-4">🔥Solid - A Complete SaaS Starter Template for SaaS</h2>
         <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6">Robust SaaS Boilerplate and Starter for Next.js</h1>
@@ -54,6 +106,7 @@
             <button class="bg-primary hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300">
                 Get Started
             </button>
+
         </div>
         <img src="https://solid.nextjstemplates.com/images/hero/hero-light.svg">
     </section>
@@ -141,52 +194,57 @@
     <!-- Footer Section -->
     <footer class="bg-gray-50 py-16">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <!-- Logo and Description -->
-                <div class="md:col-span-2">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Solid Column -->
+                <div>
                     <div class="mb-6">
                         <img src="https://solid.nextjstemplates.com/images/logo/logo-light.svg" alt="Solid Logo" width="119" height="30" class="w-auto h-8">
                     </div>
                     <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p class="text-gray-600 font-medium">CONTACT</p>
-                    <a href="mailto:hello@solid.com" class="text-primary hover:text-blue-700">hello@solid.com</a>
+                    <div class="flex items-center gap-2">
+                        <p class="text-gray-600">CONTACT</p>
+                        <a href="mailto:hello@solid.com" class="text-primary font-bold hover:text-blue-700">hello@solid.com</a>
+                    </div>
                 </div>
-
-                <!-- Quick Links -->
+    
+                <div>
+                    <h3 class="text-lg font-semibold text-dark mb-4">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Press</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+    
+              
                 <div>
                     <h3 class="text-lg font-semibold text-dark mb-4">Quick Links</h3>
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-600 hover:text-primary transition">Home</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-primary transition">Product</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Careers</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-primary transition">Pricing</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Blog</a></li>
                     </ul>
                 </div>
-
-                <!-- Support -->
+    
+                <!-- Newsletter Column -->
                 <div>
-                    <h3 class="text-lg font-semibold text-dark mb-4">Support</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Company</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Press media</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Our Blog</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Newsletter -->
-                <div class="md:col-span-2 lg:col-span-1">
                     <h3 class="text-lg font-semibold text-dark mb-4">Newsletter</h3>
                     <p class="text-gray-600 mb-4">Subscribe to receive future updates</p>
-                    <div class="flex">
-                        <input type="email" placeholder="Email address" class="px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-full">
-                        <button class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-r-lg transition">
+                    <div class="flex gap-2">
+                        <input 
+                            type="email" 
+                            placeholder="Email address" 
+                            class="px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent flex-1"
+                        >
+                        <button class="bg-primary hover:bg-blue-700 text-white px-6 py-2 rounded-full transition">
                             Subscribe
                         </button>
                     </div>
                 </div>
             </div>
-
+    
             <!-- Bottom Footer -->
             <div class="border-t border-gray-200 mt-12 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
