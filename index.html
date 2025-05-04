@@ -37,7 +37,59 @@
             }
         }
     </script>
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: #2563eb; /* Màu xanh blue */
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: #1d4ed8; 
+        }
+    </style>
     
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.createElement('div');
+            backToTopButton.className = 'back-to-top';
+            backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            document.body.appendChild(backToTopButton);
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </head>
 <body class="font-sans bg-white text-gray-800">
     <!-- Navigation -->
@@ -407,6 +459,10 @@
                     </div>
                 </div>
             </div>
+            <!-- Back to Top Button -->
+<div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
             <!-- Bottom Footer -->
             <div class="border-t border-gray-200 mt-12 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
