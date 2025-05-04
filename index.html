@@ -7,7 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script>
         tailwind.config = {
             theme: {
@@ -146,7 +153,7 @@
     <!-- Logo Cloud -->
     <section class="bg-gray-50 py-12">
         <div class="container mx-auto px-6">
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 animate__animated animate__fadeInDown wow">
                 <img src="https://solid.nextjstemplates.com/images/brand/brand-light-01.svg" alt="logitech" class="h-8 opacity-60 hover:opacity-100 transition">
                 <img src="https://solid.nextjstemplates.com/images/brand/brand-light-02.svg" alt="dropcom" class="h-8 opacity-60 hover:opacity-100 transition">
                 <img src="https://solid.nextjstemplates.com/images/brand/brand-light-03.svg" alt="AMDZI" class="h-8 opacity-60 hover:opacity-100 transition">
@@ -158,7 +165,7 @@
 
     <!-- Features Section -->
     <section class="container mx-auto px-6 py-20">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 animate__animated animate__fadeInDown wow">
             <h2 class="text-2xl md:text-3xl font-bold text-dark mb-4">SOLID FEATURES</h2>
             <h3 class="text-xl text-primary font-medium">Core Features of Solid</h3>
             <p class="text-gray-600 max-w-2xl mx-auto mt-4">
@@ -166,7 +173,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate__animated animate__fadeInDown wow">
             <!-- Feature 1 -->
             <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md hover:scale-[1.03] transition-transform duration-300 animate-fade-in-up">
                 <img style="background-color: blue;" src="https://solid.nextjstemplates.com/images/icon/icon-01.svg">
@@ -229,11 +236,11 @@
 
 
 
-<!-- Solution section -->
+<!-- Solution -->
 <section class="bg-white">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 flex flex-col-reverse md:flex-row items-center md:items-start">
-        <img class="hidden md:block w-1/2 h-1/2 object-cover" src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fabout%2Fabout-light-01.png&w=1920&q=75" alt="About image" />
-        <div class="ml-10">
+        <img class="hidden md:block w-1/2 h-1/2 object-cover animate__animated animate__fadeInLeft wow" src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fabout%2Fabout-light-01.png&w=1920&q=75" alt="About image" />
+        <div class="ml-10 animate__animated animate__fadeInRight wow">
             <div class="flex justify-left">
                 <div class="text-center rounded-xl text-white bg-green-400 w-14 h-8 md:text-sm lg:text-lg mr-2">New</div>
                 <h1 class="text-left mb-4 text-4xl tracking-tight leading-none text-gray-900 md:text-sm lg:text-lg dark:text-black">SaaS Boilerplate for Next.js</h1>
@@ -269,14 +276,10 @@
         </div>
     </div>
 </section>
-
-
-<!-- Solution section -->
+<!-- Solution content -->
 <section class="bg-white">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 flex flex-col md:flex-row items-center md:items-start">
-      
-      <!-- Text Content -->
-      <div class="md:w-1/2 w-full text-center md:text-left">
+      <div class="md:w-1/2 w-full text-center md:text-left animate__animated animate__fadeInLeft wow">
         <h3 class="mb-4 text-base md:text-xl font-semibold text-gray-800">
             Launch Your SaaS Fast
         </h3>
@@ -290,19 +293,15 @@
             Know More
             <i class="fas fa-arrow-right ml-2 text-gray-800 group-hover:text-blue-600 transition-transform duration-300 transform group-hover:translate-x-1"></i>
           </a>
-                 
       </div>
-  
-      <!-- Image -->
-      <img class="hidden md:block md:w-1/2 object-contain" src="https://solid.nextjstemplates.com/images/about/about-light-02.svg" alt="About image" />
+      <img class="hidden md:block md:w-1/2 object-contain animate__animated animate__fadeInRight wow" src="https://solid.nextjstemplates.com/images/about/about-light-02.svg" alt="About image" />
     </div>
 </section>
-  
 
 
-<div x-data="{ activeTab: 1 }" class="max-w-5xl mx-auto">
+<div x-data="{ activeTab: 1 }" class="max-w-5xl mx-auto ">
     <!-- Tabs -->
-    <div class="flex flex-col md:flex-row items-center justify-center mb-6 space-y-2 md:space-y-0 md:space-x-2">
+    <div class="flex flex-col md:flex-row items-center justify-center mb-6 space-y-2 md:space-y-0 md:space-x-2 animate__animated animate__fadeInDown wow">
         <div class="flex flex-col md:flex-row border border-gray-200 rounded shadow-md divide-y md:divide-y-0 md:divide-x divide-gray-200">
         <button 
             @click="activeTab = 1"
@@ -328,7 +327,7 @@
         </div>
     </div> 
     <template x-if="activeTab === 1">
-        <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInDown wow">
         <div class="space-y-4 md:w-2/3">
             <h2 class="text-4xl font-semibold text-left">Solid UI with Solid <br> Features.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.</p>
@@ -340,7 +339,7 @@
         </div>
     </template>
     <template x-if="activeTab === 2">
-        <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInDown wow">
         <div class="space-y-4 md:w-2/3">
             <h2 class="text-4xl font-semibold text-left">Pages and UI Components <br> You Need for a SaaS.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.</p>
@@ -352,7 +351,7 @@
         </div>
     </template>
     <template x-if="activeTab === 3">
-        <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInDown wow">
         <div class="space-y-4 md:w-2/3">
             <h2 class="text-4xl font-semibold text-left">Functional Blog, DB, Auth <br> and Many More</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.</p>
@@ -366,15 +365,15 @@
 </div>
   
   
-  
+<!-- Trusted by Global Companies -->
 <section class="relative py-12 px-6 text-center bg-cover bg-center mt-32 mb-32" style="background-image: url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg'), linear-gradient(to bottom, #aac2fb, #ffffff);">
     <img src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fshape%2Fshape-04.png&w=750&q=75" alt="Top Left" class="absolute top-0 left-0 z-10 w-24 h-24 md:w-64 md:h-64">
     <img src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fshape%2Fshape-05.png&w=384&q=75" alt="Bottom Right" class="absolute bottom-0 right-0 z-10 w-24 h-24 md:w-32 md:h-32">
     <div class="relative z-20">
-        <h1 class="text-4xl font-semibold text-black mb-4">Trusted by Global Companies</h1>
-        <p class="text-lg text-black mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+        <h1 class="text-4xl font-semibold text-black mb-4 animate__animated animate__fadeInDown wow">Trusted by Global Companies</h1>
+        <p class="text-lg text-black mb-6 animate__animated animate__fadeInDown wow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros.</br> Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
 
-        <div class="flex justify-center gap-12">
+        <div class="flex justify-center gap-12 animate__animated animate__fadeInDown wow animate__delay-1s">
             <div class="text-center text-black">
                 <h2 class="text-2xl font-bold">500K</h2>
                 <p class="mt-2">World Wide Clients</p>
@@ -393,9 +392,526 @@
 
 
 
+<!-- INTEGRATIONS -->
+<div class="animate_top text-center mb-16 animate__animated animate__fadeInDown wow">
+    <div class="inline-block rounded-full bg-blue-100">
+        <span class="font-medium text-black">INTEGRATIONS</span>
+    </div>
+    <h2 class="text-4xl font-bold text-black mt-5">Packed with all the key</br> integrations you need</h2>
+    <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros.</br> Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+</div>
+  
+  
+
+<!-- SOCIAL IMG GRID -->
+<div class="grid grid-cols-6 mb-10 grid-rows-2 gap-4 animate__animated animate__fadeInDown wow bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-no-repeat bg-cover p-4 rounded">
+    <!-- Column 1 -->
+    <div class="row-start-1 w-fit">
+      <img src="https://solid.nextjstemplates.com/images/brand/brand-07.svg" alt="Image 1" class="w-[50px] h-[50px] object-cover rounded" />
+    </div>
+    <div class="row-start-2 w-fit relative bg-gray-100 rounded">
+      <div class="absolute top-2 left-2 w-3 h-3 bg-blue-400 rounded-full shadow"></div>
+    </div>
+  
+    <!-- Column 2 -->
+    <div class="row-start-1 w-fit relative bg-gray-100 rounded">
+      <div class="absolute top-2 left-2 w-3 h-3 bg-red-400 rounded-full shadow"></div>
+    </div>
+    <div class="row-start-2 w-fit">
+      <img src="https://solid.nextjstemplates.com/images/brand/brand-10.svg" alt="Image 2" class="w-[50px] h-[50px] object-cover rounded" />
+    </div>
+  
+    <!-- Column 3 -->
+    <div class="row-start-1 w-fit">
+      <img src="https://solid.nextjstemplates.com/images/brand/brand-08.svg" alt="Image 3" class="w-[50px] h-[50px] object-cover rounded" />
+    </div>
+    <div class="row-start-2 w-fit relative bg-gray-100 rounded">
+      <div class="absolute top-2 left-2 w-3 h-3 bg-green-400 rounded-full shadow"></div>
+    </div>
+  
+    <!-- Column 4 -->
+    <div class="row-start-1 w-fit relative bg-gray-100 rounded">
+      <div class="absolute top-2 left-2 w-3 h-3 bg-yellow-400 rounded-full shadow"></div>
+    </div>
+    <div class="row-start-2 w-fit">
+      <img src="https://solid.nextjstemplates.com/images/brand/brand-11.svg" alt="Image 4" class="w-[50px] h-[50px] object-cover rounded" />
+    </div>
+  
+    <!-- Column 5 -->
+    <div class="row-start-1 w-fit">
+      <img src="https://solid.nextjstemplates.com/images/brand/brand-09.svg" alt="Image 5" class="w-[50px] h-[50px] object-cover rounded" />
+    </div>
+    <div class="row-start-2 w-fit relative bg-gray-100 rounded">
+      <div class="absolute top-2 left-2 w-3 h-3 bg-purple-400 rounded-full shadow"></div>
+    </div>
+  
+    <!-- Column 6 -->
+    <div class="row-start-1 w-fit relative bg-gray-100 rounded">
+      <div class="absolute top-2 left-2 w-3 h-3 bg-pink-400 rounded-full shadow"></div>
+    </div>
+    <div class="row-start-2 w-fit">
+      <img src="https://solid.nextjstemplates.com/images/brand/brand-12.svg" alt="Image 6" class="w-[50px] h-[50px] object-cover rounded" />
+    </div>
+</div>
+  
+  
+
+<!-- Join With Us Today -->
+<div class="mx-auto max-w-6xl rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] px-10 py- 12 md:px-12 xl:px-16 xl:py-0">
+    <div class="flex items-center justify-between">
+      <!-- Left Content -->
+      <div class="lg:w-1/2 animate__animated animate__fadeInLeft wow">
+        <h2 class="mb-4 text-3xl font-bold text-black md:text-4xl">Join With Us Today & Increase Your Productivity</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+      </div>
+      
+      <!-- Right Content -->
+      <div class="lg:w-[50%] animate__animated animate__fadeInRight wow">
+        <div class="flex items-center justify-end xl:justify-between">
+          <img 
+            width="300" 
+            height="300" 
+            class="hidden xl:block" 
+            src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fshape%2Fshape-06.png&w=640&q=75"
+          />
+          <a href="#" class="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 font-medium text-white">
+            Sign up free
+            <span>
+              <icon class="white fas fa-arrow-right"></icon>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+  
+<!-- Frequently Asked Questions -->
+<div class="mx-auto max-w-6xl px-10 py-12 ">
+    <div class="flex flex-wrap gap-8 md:flex-nowrap md:items-center xl:gap-32">
+    <!-- Left Content -->
+    <div class="md:w-2/5 lg:w-1/2 animate__animated animate__fadeInLeft wow">
+        <span class="font-medium uppercase text-black">OUR FAQS</span>
+        <h2 class="mb-6 text-3xl font-bold text-black">
+        Frequently Asked</br> Questions
+        </h2>
+        <a href="#" class="mt-8 inline-flex items-center gap-2.5 text-black">
+        <span>Know More</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" fill="currentColor"></path>
+        </svg>
+        </a>
+    </div>
+    
+    <!-- Right Content -->
+<div class="md:w-3/5 lg:w-1/2 animate__animated animate__fadeInRight wow">
+    <div class="rounded-lg shadow-lg">
+        <!-- FAQ Item 1-->
+        <div x-data="{ open: true }" class="flex flex-col border-b border-gray-200">
+            <button @click="open = !open" class="flex cursor-pointer items-center justify-between px-6 py-5 font-medium text-black">
+                Lorem ipsum dolor sit amet, consectetur
+                <svg :class="open ? '' : 'rotate-45'" class="transition-transform duration-300" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M7.83331 7.83337V0.833374H10.1666V7.83337H17.1666V10.1667H10.1666V17.1667H7.83331V10.1667H0.833313V7.83337H7.83331Z" fill="currentColor"/>
+                </svg>
+            </button>
+            <p x-show="open" x-transition class="border-t border-gray-200 px-6 py-6">
+                We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.
+            </p>
+        </div>
+
+        <!-- FAQ Item 2-->
+        <div x-data="{ open: false }" class="flex flex-col border-b border-gray-200">
+            <button @click="open = !open" class="flex cursor-pointer items-center justify-between px-6 py-5 font-medium text-black">
+                Lorem ipsum dolor sit amet, consectetur
+                <svg :class="open ? '' : 'rotate-45'" class="transition-transform duration-300" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M7.83331 7.83337V0.833374H10.1666V7.83337H17.1666V10.1667H10.1666V17.1667H7.83331V10.1667H0.833313V7.83337H7.83331Z" fill="currentColor"/>
+                </svg>
+            </button>
+            <p x-show="open" x-transition class="border-t border-gray-200 px-6 py-6">
+                We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.
+            </p>
+        </div>
+
+        <!-- FAQ Item 3-->
+        <div x-data="{ open: false }" class="flex flex-col border-b border-gray-200">
+            <button @click="open = !open" class="flex cursor-pointer items-center justify-between px-6 py-5 font-medium text-black">
+                Lorem ipsum dolor sit amet, consectetur
+                <svg :class="open ? '' : 'rotate-45'" class="transition-transform duration-300" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M7.83331 7.83337V0.833374H10.1666V7.83337H17.1666V10.1667H10.1666V17.1667H7.83331V10.1667H0.833313V7.83337H7.83331Z" fill="currentColor"/>
+                </svg>
+            </button>
+            <p x-show="open" x-transition class="border-t border-gray-200 px-6 py-6">
+                We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
 
 
 
+<!-- TESTIMONIALS -->
+<div class="animate_top text-center mb-16 mt-16 animate__animated animate__fadeInDown wow">
+    <div class="inline-block rounded-full bg-blue-100">
+        <span class="font-medium text-black">TESTIMONIALS</span>
+    </div>
+    <h2 class="text-4xl font-bold text-black mt-5">Client's Testimonials</h2>
+    <p class="mt-5 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros.</br> Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Carousel -->
+<div class="max-w-6xl mx-auto px-4 py-16 animate__animated animate__fadeInDown wow">
+    <div class="testimonial-slider" x-data="{}" x-init="
+        setTimeout(() => {
+            $('.testimonial-slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 2,
+                adaptiveHeight: true
+            });
+        }, 100);
+    ">
+
+        <div class="p-6">
+            <div class="flex flex-col gap-8 max-w-4xl mx-auto">
+                <div class="flex flex-row justify-between items-center ">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Devid Smith</h3>
+                        <p class="text-gray-500">Founder @democompany</p>
+                    </div>
+                    <div class="w-14 h-14 rounded-full overflow-hidden mb-4">
+                        <img class="w-14 h-14" src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-01.5ceb446c.png&w=128&q=75" alt="Devid Smith" class="w-full h-full object-cover bg-blue-200">
+                    </div>
+                </div>
+                <div class="border-t pt-4 ">
+                    <p class="text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-6">
+            <div class="flex flex-col gap-8 max-w-4xl mx-auto">
+                <div class="flex flex-row justify-between items-center ">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Jhon Abraham</h3>
+                        <p class="text-gray-500">Founder @democompany</p>
+                    </div>
+                    <div class="w-14 h-14 rounded-full overflow-hidden mb-4">
+                        <img class="w-14 h-14" src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-02.92a59e3e.png&w=128&q=75" alt="Json Abraham" class="w-full h-full object-cover bg-blue-200">
+                    </div>
+                </div>
+                <div class="border-t pt-4 ">
+                    <p class="text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <div class="flex flex-col gap-8 max-w-4xl mx-auto">
+                <div class="flex flex-row justify-between items-center ">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Devid Smith</h3>
+                        <p class="text-gray-500">Founder @democompany</p>
+                    </div>
+                    <div class="w-14 h-14 rounded-full overflow-hidden mb-4">
+                        <img class="w-14 h-14" src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-01.5ceb446c.png&w=128&q=75" alt="Devid Smith" class="w-full h-full object-cover bg-blue-200">
+                    </div>
+                </div>
+                <div class="border-t pt-4 ">
+                    <p class="text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <div class="flex flex-col gap-8 max-w-4xl mx-auto">
+                <div class="flex flex-row justify-between items-center ">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Jhon Abraham</h3>
+                        <p class="text-gray-500">Founder @democompany</p>
+                    </div>
+                    <div class="w-14 h-14 rounded-full overflow-hidden mb-4">
+                        <img class="w-14 h-14" src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-02.92a59e3e.png&w=128&q=75" alt="Json Abraham" class="w-full h-full object-cover bg-blue-200">
+                    </div>
+                </div>
+                <div class="border-t pt-4 ">
+                    <p class="text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- PRICING PLANS -->
+<div class="animate_top text-center mb-16 mt-16 animate__animated animate__fadeInDown wow">
+    <div class="inline-block rounded-full bg-blue-100">
+        <span class="font-medium text-black">Simple Pricing</span>
+    </div>
+    <h2 class="text-4xl font-bold text-black mt-5">Client's Testimonials</h2>
+    <p class="mt-5 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros.</br> Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+</div>
+
+
+<!-- Pricing Infos -->
+<div class="max-w-6xl mx-auto animate__animated animate__fadeInDown wow">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Small Pack -->
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <div class="mb-6">
+                <div class="flex items-baseline">
+                    <span class="text-3xl font-bold">$ 100</span>
+                    <span class="text-gray-500 ml-1 text-lg">/month</span>
+                </div>
+                <h3 class="text-xl font-bold mt-4">Small Pack</h3>
+                <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-6 pb-4">
+                <ul class="space-y-4">
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">300 GB Storage</span>
+                    </li>
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">Unlimited Photos and Videos</span>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <span>Exclusive Support</span>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <span>Custom Branding Strategy</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="mt-6">
+                <a href="#" class="group inline-flex items-center text-blue-600 font-medium">
+                    Get the Plan
+                    <i class="fas fa-arrow-right ml-2 text-blue-600 transition-transform duration-300 transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Medium Pack -->
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 relative">
+            <div class="absolute -top-1 right-6 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-b-md">
+                POPULAR
+            </div>
+            <div class="mb-6">
+                <div class="flex items-baseline">
+                    <span class="text-3xl font-bold">$ 200</span>
+                    <span class="text-gray-500 ml-1 text-lg">/month</span>
+                </div>
+                <h3 class="text-xl font-bold mt-4">Medium Pack</h3>
+                <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-6 pb-4">
+                <ul class="space-y-4">
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">300 GB Storage</span>
+                    </li>
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">Unlimited Photos and Videos</span>
+                    </li>
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">Exclusive Support</span>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <span>Custom Branding Strategy</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="mt-6">
+                <a href="#" class="group inline-flex items-center text-blue-600 font-medium">
+                    Get the Plan
+                    <i class="fas fa-arrow-right ml-2 text-blue-600 transition-transform duration-300 transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Large Pack -->
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <div class="mb-6">
+                <div class="flex items-baseline">
+                    <span class="text-3xl font-bold">$ 300</span>
+                    <span class="text-gray-500 ml-1 text-lg">/month</span>
+                </div>
+                <h3 class="text-xl font-bold mt-4">Large Pack</h3>
+                <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-6 pb-4">
+                <ul class="space-y-4">
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">300 GB Storage</span>
+                    </li>
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">Unlimited Photos and Videos</span>
+                    </li>
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">Exclusive Support</span>
+                    </li>
+                    <li class="flex items-center text-gray-800">
+                        <span class="font-medium">Custom Branding Strategy</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="mt-6">
+                <a href="#" class="group inline-flex items-center text-blue-600 font-medium">
+                    Get the Plan
+                    <i class="fas fa-arrow-right ml-2 text-blue-600 transition-transform duration-300 transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Form -->
+<div class="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mt-10 animate__animated animate__fadeInDown wow"style="background-image: url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg'), linear-gradient(to bottom, #aac2fb, #ffffff);">
+    <div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-6xl w-full">
+        <div class="flex flex-col md:flex-row">
+        <div class="w-full md:w-2/3 p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Send a message</h2>
+            
+            <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                <input type="text" placeholder="Full name" class="w-full px-4 py-3 border-b border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                <input type="email" placeholder="Email address" class="w-full px-4 py-3 border-b border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                <input type="text" placeholder="Subject" class="w-full px-4 py-3 border-b border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                <input type="tel" placeholder="Phone number" class="w-full px-4 py-3 border-b border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 border-b border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            
+            <div class="flex items-center mb-6">
+                <input id="checkbox" type="checkbox" class="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500">
+                <label for="checkbox" class="ml-2 text-sm text-gray-600">
+                By clicking Checkbox, you agree to use our "Form" terms And consent cookie usage in browser.
+                </label>
+            </div>
+            
+            <div class="flex justify-end">
+                <button type="submit" class="bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full flex items-center transition-colors duration-300">
+                Send Message
+                <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+            </form>
+        </div>
+        
+        <!-- Contact Info-->
+        <div class="w-full md:w-1/3 p-8 md:p-12 ">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Find us</h2>
+            
+            <div class="space-y-6">
+            <div>
+                <h3 class="text-lg font-medium text-gray-700">Our Location</h3>
+                <p class="text-gray-600 mt-1">290 Maryam Springs 260,<br>Courbevoie, Paris, France</p>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-medium text-gray-700">Email Address</h3>
+                <p class="text-gray-600 mt-1">yourmail@domainname.com</p>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-medium text-gray-700">Phone Number</h3>
+                <p class="text-gray-600 mt-1">+009 42334 6343 843</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- NEWS & BLOGS -->
+<div class="animate_top text-center mb-16 mt-16 animate__animated animate__fadeInDown wow">
+    <div class="inline-block rounded-full bg-blue-100">
+        <span class="font-medium text-black">NEWS & BLOGS</span>
+    </div>
+    <h2 class="text-4xl font-bold text-black mt-5">Latest News & Blogs</h2>
+    <p class="mt-5 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros.</br> Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+</div>
+
+<!-- Card IMAGES -->
+<div class="container mx-auto max-w-6xl mt-10 mb-10 animate__animated animate__fadeInDown wow">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+        <div class="h-48 overflow-hidden">
+          <img src=" https://solid.nextjstemplates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnq6dnm34%2Fproduction%2F9e6b67ab379a182243ac521db056e96918ff1b5d-1000x667.png&w=1920&q=75" alt="Person with camera" class="w-full object-cover">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Exploring MERN Stack: Powering Modern Web</h3>
+          <p class="text-gray-600 text-sm">In the world of web development, staying ahead of the curve is crucial. One technology stack that ha</p>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+        <div class="h-48 overflow-hidden">
+          <img src="https://solid.nextjstemplates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnq6dnm34%2Fproduction%2Fb34fca863dc4efa821da4e71328ec9718ab14062-970x440.png&w=1920&q=75" alt="UI Design on laptop" class="w-full object-cover">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Best UI components for modern website</h3>
+          <p class="text-gray-600 text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+        </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+        <div class="h-48 overflow-hidden">
+          <img src="https://solid.nextjstemplates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnq6dnm34%2Fproduction%2Ff492eebba9742b0c8c71dd541bd123cdd4fe2130-970x440.png&w=1920&q=75" alt="UI/UX Wireframes" class="w-full object-cover">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">The Power of UI/UX: Elevating Digital Ex</h3>
+          <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.</p>
+        </div>
+      </div>
+      
+    </div>
+</div>
 
 
 
@@ -411,7 +927,7 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Solid Column -->
-                <div>
+                <div class="animate__animated animate__fadeInDown wow">
                     <div class="mb-6">
                         <img src="https://solid.nextjstemplates.com/images/logo/logo-light.svg" alt="Solid Logo" width="119" height="30" class="w-auto h-8">
                     </div>
@@ -422,7 +938,7 @@
                     </div>
                 </div>
     
-                <div>
+                <div class="animate__animated animate__fadeInDown wow">
                     <h3 class="text-lg font-semibold text-dark mb-4">Company</h3>
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-600 hover:text-primary transition">About</a></li>
@@ -433,7 +949,7 @@
                 </div>
     
               
-                <div>
+                <div class="animate__animated animate__fadeInDown wow">
                     <h3 class="text-lg font-semibold text-dark mb-4">Quick Links</h3>
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-600 hover:text-primary transition">Home</a></li>
@@ -444,7 +960,7 @@
                 </div>
     
                 <!-- Newsletter Column -->
-                <div>
+                <div class="animate__animated animate__fadeInDown wow">
                     <h3 class="text-lg font-semibold text-dark mb-4">Newsletter</h3>
                     <p class="text-gray-600 mb-4">Subscribe to receive future updates</p>
                     <div class="flex gap-2">
@@ -464,7 +980,7 @@
     <i class="fas fa-arrow-up"></i>
 </div>
             <!-- Bottom Footer -->
-            <div class="border-t border-gray-200 mt-12 pt-8">
+            <div class="border-t border-gray-200 mt-12 pt-8 animate__animated animate__fadeInDown wow">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="flex space-x-6 mb-4 md:mb-0">
                         <a href="#" class="text-gray-600 hover:text-primary transition">English</a>
@@ -480,3 +996,6 @@
     </footer>
 </body>
 </html>
+<script>
+    new WOW().init();
+</script>
