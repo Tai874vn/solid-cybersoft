@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <link href="./css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script>
         tailwind.config = {
             theme: {
@@ -31,7 +33,7 @@
 </head>
 <body class="font-sans bg-white text-gray-800">
     <!-- Navigation -->
-    <nav class="container mx-auto px-6 py-4">
+    <nav class="fixed top-0 left-0 w-full bg-white z-50 shadow container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center">
@@ -96,7 +98,7 @@
     <!-- Logo Cloud -->
     <section class="bg-gray-50 py-12">
         <div class="container mx-auto px-6">
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 animate__animated animate__fadeInDown wow">
                 <img src="https://solid.nextjstemplates.com/images/brand/brand-light-01.svg" alt="logitech" class="h-8 opacity-60 hover:opacity-100 transition">
                 <img src="https://solid.nextjstemplates.com/images/brand/brand-light-02.svg" alt="dropcom" class="h-8 opacity-60 hover:opacity-100 transition">
                 <img src="https://solid.nextjstemplates.com/images/brand/brand-light-03.svg" alt="AMDZI" class="h-8 opacity-60 hover:opacity-100 transition">
@@ -108,7 +110,7 @@
 
     <!-- Features Section -->
     <section class="container mx-auto px-6 py-20">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 animate__animated animate__fadeInDown wow">
             <h2 class="text-2xl md:text-3xl font-bold text-dark mb-4">SOLID FEATURES</h2>
             <h3 class="text-xl text-primary font-medium">Core Features of Solid</h3>
             <p class="text-gray-600 max-w-2xl mx-auto mt-4">
@@ -116,7 +118,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate__animated animate__fadeInDown wow">
             <!-- Feature 1 -->
             <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
                 <img style="background-color: blue;" src="https://solid.nextjstemplates.com/images/icon/icon-01.svg">
@@ -182,8 +184,8 @@
 <!-- Solution -->
 <section class="bg-white">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 flex flex-col-reverse md:flex-row items-center md:items-start">
-        <img class="hidden md:block w-1/2 h-1/2 object-cover" src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fabout%2Fabout-light-01.png&w=1920&q=75" alt="About image" />
-        <div class="ml-10">
+        <img class="hidden md:block w-1/2 h-1/2 object-cover animate__animated animate__fadeInLeft wow" src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fabout%2Fabout-light-01.png&w=1920&q=75" alt="About image" />
+        <div class="ml-10 animate__animated animate__fadeInRight wow">
             <div class="flex justify-left">
                 <div class="text-center rounded-xl text-white bg-green-400 w-14 h-8 md:text-sm lg:text-lg mr-2">New</div>
                 <h1 class="text-left mb-4 text-4xl tracking-tight leading-none text-gray-900 md:text-sm lg:text-lg dark:text-black">SaaS Boilerplate for Next.js</h1>
@@ -222,7 +224,7 @@
 <!-- Solution content -->
 <section class="bg-white">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 flex flex-col md:flex-row items-center md:items-start">
-      <div class="md:w-1/2 w-full text-center md:text-left">
+      <div class="md:w-1/2 w-full text-center md:text-left animate__animated animate__fadeInLeft wow">
         <h3 class="mb-4 text-base md:text-xl font-semibold text-gray-800">
             Launch Your SaaS Fast
         </h3>
@@ -237,14 +239,14 @@
             <i class="fas fa-arrow-right ml-2 text-gray-800 group-hover:text-blue-600 transition-transform duration-300 transform group-hover:translate-x-1"></i>
           </a>
       </div>
-      <img class="hidden md:block md:w-1/2 object-contain" src="https://solid.nextjstemplates.com/images/about/about-light-02.svg" alt="About image" />
+      <img class="hidden md:block md:w-1/2 object-contain animate__animated animate__fadeInRight wow" src="https://solid.nextjstemplates.com/images/about/about-light-02.svg" alt="About image" />
     </div>
 </section>
 
 
-<div x-data="{ activeTab: 1 }" class="max-w-5xl mx-auto">
+<div x-data="{ activeTab: 1 }" class="max-w-5xl mx-auto ">
     <!-- Tabs -->
-    <div class="flex flex-col md:flex-row items-center justify-center mb-6 space-y-2 md:space-y-0 md:space-x-2">
+    <div class="flex flex-col md:flex-row items-center justify-center mb-6 space-y-2 md:space-y-0 md:space-x-2 animate__animated animate__fadeInDown wow">
         <div class="flex flex-col md:flex-row border border-gray-200 rounded shadow-md divide-y md:divide-y-0 md:divide-x divide-gray-200">
         <button 
             @click="activeTab = 1"
@@ -270,7 +272,7 @@
         </div>
     </div> 
     <template x-if="activeTab === 1">
-        <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInDown wow">
         <div class="space-y-4 md:w-2/3">
             <h2 class="text-4xl font-semibold text-left">Solid UI with Solid <br> Features.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.</p>
@@ -282,7 +284,7 @@
         </div>
     </template>
     <template x-if="activeTab === 2">
-        <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInDown wow">
         <div class="space-y-4 md:w-2/3">
             <h2 class="text-4xl font-semibold text-left">Pages and UI Components <br> You Need for a SaaS.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.</p>
@@ -294,7 +296,7 @@
         </div>
     </template>
     <template x-if="activeTab === 3">
-        <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInDown wow">
         <div class="space-y-4 md:w-2/3">
             <h2 class="text-4xl font-semibold text-left">Functional Blog, DB, Auth <br> and Many More</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.</p>
@@ -313,10 +315,10 @@
     <img src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fshape%2Fshape-04.png&w=750&q=75" alt="Top Left" class="absolute top-0 left-0 z-10 w-24 h-24 md:w-64 md:h-64">
     <img src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fshape%2Fshape-05.png&w=384&q=75" alt="Bottom Right" class="absolute bottom-0 right-0 z-10 w-24 h-24 md:w-32 md:h-32">
     <div class="relative z-20">
-        <h1 class="text-4xl font-semibold text-black mb-4">Trusted by Global Companies</h1>
-        <p class="text-lg text-black mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+        <h1 class="text-4xl font-semibold text-black mb-4 animate__animated animate__fadeInDown wow">Trusted by Global Companies</h1>
+        <p class="text-lg text-black mb-6 animate__animated animate__fadeInDown wow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros.</br> Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
 
-        <div class="flex justify-center gap-12">
+        <div class="flex justify-center gap-12 animate__animated animate__fadeInDown wow animate__delay-1s">
             <div class="text-center text-black">
                 <h2 class="text-2xl font-bold">500K</h2>
                 <p class="mt-2">World Wide Clients</p>
@@ -336,7 +338,7 @@
 
 
 <!-- INTEGRATIONS -->
-<div class="animate_top text-center mb-16">
+<div class="animate_top text-center mb-16 animate__animated animate__fadeInDown wow">
     <div class="inline-block rounded-full bg-blue-100">
         <span class="font-medium text-black">INTEGRATIONS</span>
     </div>
@@ -347,7 +349,7 @@
   
 
 <!-- SOCIAL IMG GRID -->
-<div class="grid grid-cols-6 grid-rows-2 gap-4 bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-no-repeat bg-cover p-4 rounded">
+<div class="grid grid-cols-6 mb-10 grid-rows-2 gap-4 animate__animated animate__fadeInDown wow bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-no-repeat bg-cover p-4 rounded">
     <!-- Column 1 -->
     <div class="row-start-1 w-fit">
       <img src="https://solid.nextjstemplates.com/images/brand/brand-07.svg" alt="Image 1" class="w-[50px] h-[50px] object-cover rounded" />
@@ -395,7 +397,7 @@
     <div class="row-start-2 w-fit">
       <img src="https://solid.nextjstemplates.com/images/brand/brand-12.svg" alt="Image 6" class="w-[50px] h-[50px] object-cover rounded" />
     </div>
-  </div>
+</div>
   
   
 
@@ -403,13 +405,13 @@
 <div class="mx-auto max-w-6xl rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] px-10 py- 12 md:px-12 xl:px-16 xl:py-0">
     <div class="flex items-center justify-between">
       <!-- Left Content -->
-      <div class="lg:w-1/2">
+      <div class="lg:w-1/2 animate__animated animate__fadeInLeft wow">
         <h2 class="mb-4 text-3xl font-bold text-black md:text-4xl">Join With Us Today & Increase Your Productivity</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
       </div>
       
       <!-- Right Content -->
-      <div class="lg:w-[50%]">
+      <div class="lg:w-[50%] animate__animated animate__fadeInRight wow">
         <div class="flex items-center justify-end xl:justify-between">
           <img 
             width="300" 
@@ -426,13 +428,13 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
   
 <!-- Frequently Asked Questions -->
 <div class="mx-auto max-w-6xl px-10 py-12 ">
     <div class="flex flex-wrap gap-8 md:flex-nowrap md:items-center xl:gap-32">
     <!-- Left Content -->
-    <div class="md:w-2/5 lg:w-1/2">
+    <div class="md:w-2/5 lg:w-1/2 animate__animated animate__fadeInLeft wow">
         <span class="font-medium uppercase text-black">OUR FAQS</span>
         <h2 class="mb-6 text-3xl font-bold text-black">
         Frequently Asked</br> Questions
@@ -446,7 +448,7 @@
     </div>
     
     <!-- Right Content -->
-<div class="md:w-3/5 lg:w-1/2">
+<div class="md:w-3/5 lg:w-1/2 animate__animated animate__fadeInRight wow">
     <div class="rounded-lg shadow-lg">
         <!-- FAQ Item 1-->
         <div x-data="{ open: true }" class="flex flex-col border-b border-gray-200">
@@ -493,7 +495,7 @@
 
 
 <!-- TESTIMONIALS -->
-<div class="animate_top text-center mb-16 mt-16">
+<div class="animate_top text-center mb-16 mt-16 animate__animated animate__fadeInDown wow">
     <div class="inline-block rounded-full bg-blue-100">
         <span class="font-medium text-black">TESTIMONIALS</span>
     </div>
@@ -510,7 +512,7 @@
 
 
 <!-- Carousel -->
-<div class="max-w-6xl mx-auto px-4 py-16">
+<div class="max-w-6xl mx-auto px-4 py-16 animate__animated animate__fadeInDown wow">
     <div class="testimonial-slider" x-data="{}" x-init="
         setTimeout(() => {
             $('.testimonial-slider').slick({
@@ -611,7 +613,7 @@
 
 
 <!-- PRICING PLANS -->
-<div class="animate_top text-center mb-16 mt-16">
+<div class="animate_top text-center mb-16 mt-16 animate__animated animate__fadeInDown wow">
     <div class="inline-block rounded-full bg-blue-100">
         <span class="font-medium text-black">Simple Pricing</span>
     </div>
@@ -620,8 +622,8 @@
 </div>
 
 
-
-<div class="max-w-6xl mx-auto">
+<!-- Pricing Infos -->
+<div class="max-w-6xl mx-auto animate__animated animate__fadeInDown wow">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Small Pack -->
         <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
@@ -737,7 +739,7 @@
 </div>
 
 <!-- Form -->
-<div class="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mt-10"style="background-image: url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg'), linear-gradient(to bottom, #aac2fb, #ffffff);">
+<div class="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mt-10 animate__animated animate__fadeInDown wow"style="background-image: url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg'), linear-gradient(to bottom, #aac2fb, #ffffff);">
     <div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-6xl w-full">
         <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-2/3 p-8 md:p-12">
@@ -808,7 +810,7 @@
 </div>
 
 <!-- NEWS & BLOGS -->
-<div class="animate_top text-center mb-16 mt-16">
+<div class="animate_top text-center mb-16 mt-16 animate__animated animate__fadeInDown wow">
     <div class="inline-block rounded-full bg-blue-100">
         <span class="font-medium text-black">NEWS & BLOGS</span>
     </div>
@@ -817,7 +819,7 @@
 </div>
 
 <!-- Card IMAGES -->
-<div class="container mx-auto max-w-6xl mt-10 mb-10">
+<div class="container mx-auto max-w-6xl mt-10 mb-10 animate__animated animate__fadeInDown wow">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
       <!-- Card 1 -->
@@ -854,7 +856,7 @@
       </div>
       
     </div>
-  </div>
+</div>
 
 
 
@@ -870,7 +872,7 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Solid Column -->
-                <div>
+                <div class="animate__animated animate__fadeInDown wow">
                     <div class="mb-6">
                         <img src="https://solid.nextjstemplates.com/images/logo/logo-light.svg" alt="Solid Logo" width="119" height="30" class="w-auto h-8">
                     </div>
@@ -881,7 +883,7 @@
                     </div>
                 </div>
     
-                <div>
+                <div class="animate__animated animate__fadeInDown wow">
                     <h3 class="text-lg font-semibold text-dark mb-4">Company</h3>
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-600 hover:text-primary transition">About</a></li>
@@ -892,7 +894,7 @@
                 </div>
     
               
-                <div>
+                <div class="animate__animated animate__fadeInDown wow">
                     <h3 class="text-lg font-semibold text-dark mb-4">Quick Links</h3>
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-600 hover:text-primary transition">Home</a></li>
@@ -903,7 +905,7 @@
                 </div>
     
                 <!-- Newsletter Column -->
-                <div>
+                <div class="animate__animated animate__fadeInDown wow">
                     <h3 class="text-lg font-semibold text-dark mb-4">Newsletter</h3>
                     <p class="text-gray-600 mb-4">Subscribe to receive future updates</p>
                     <div class="flex gap-2">
@@ -919,7 +921,7 @@
                 </div>
             </div>
             <!-- Bottom Footer -->
-            <div class="border-t border-gray-200 mt-12 pt-8">
+            <div class="border-t border-gray-200 mt-12 pt-8 animate__animated animate__fadeInDown wow">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="flex space-x-6 mb-4 md:mb-0">
                         <a href="#" class="text-gray-600 hover:text-primary transition">English</a>
@@ -935,3 +937,6 @@
     </footer>
 </body>
 </html>
+<script>
+    new WOW().init();
+</script>
